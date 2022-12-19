@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% block title %}About me{% endblock title %}
+{% load static %}
+{% block content %}
+
+
+<main id="main">
+  <section class="section pb-5">
+    <div class="container">
+      <div class="row mb-5 align-items-end">
+        <div class="col-md-6" data-aos="fade-up">
+          <h2>About Me</h2>
+          <p class="mb-0">Hello there, I'm Ashwani, a Python Developer.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
+          <h3 class="h3 mb-4">Skills</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <div class="d-flex mb-1">
+                <strong>Django</strong>
+                <span class="ml-auto">85%</span>
+              </div>
+              <div class="progress custom-progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li class="mb-3">
+              <div class="d-flex mb-1">
+                <strong>Python</strong>
+                <span class="ml-auto">76%</span>
+              </div>
+              <div class="progress custom-progress">
+                <div class="progress-bar" role="progressbar" style="width: 96%" aria-valuenow="76" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li class="mb-3">
+              <div class="d-flex mb-1">
+                <strong>Debugging</strong>
+                <span class="ml-auto">80%</span>
+              </div>
+              <div class="progress custom-progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="99" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li class="mb-3">
+              <div class="d-flex mb-1">
+                <strong>SQL </strong>
+                <span class="ml-auto">75%</span>
+              </div>
+              <div class="progress custom-progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="87" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li class="mb-3">
+              <div class="d-flex mb-1">
+                <strong>Git</strong>
+                <span class="ml-auto">78%</span>
+              </div>
+              <div class="progress custom-progress">
+                <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="78" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-7 mb-5 mb-md-0" data-aos="fade-up">
+          <p><img src="{% static 'img/icons/icon-48x48.png' %}" alt="Image" class="img-fluid"></p>
+          <p>My Skills :</p>
+          <p> • Expert in developing backend using Django and Flask.</p>
+          <p> • Able to solve programming problems in Python</p>
+          <p> • Proficient in using PostgreSQL as a database</p>
+          <p> • Use geolocation services and Google Maps</p>
+          <p> • RESTful APIs with python </p>
+          <p> • Create databases</p>
+          <p> • What drives you to work with me?</p>
+          <p> • My priority is to provide customer satisfaction</p>
+          <p> • Nice and friendly to deal with</p>
+          <p> • Interested in building good and continuous working relationships</p>
+          <p></p>
+
+          <!-- <p><a href="" download="" class="readmore">Download my CV</a></p> -->
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main><!-- End #main -->
+{% endblock %}

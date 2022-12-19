@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}{{project.project_title}}{% endblock title %}
+{% block content %}
+
+<main id="main">
+
+  <section class="section">
+    <div class="container">
+      <div class="row mb-4 align-items-center">
+        <div class="col-md-6" data-aos="fade-up">
+          <h2>{{project.title}}</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-md-8" data-aos="fade-up">
+            {% for images in project.project_image.all %}
+            <img src="{{images.image.url}}" alt="Image" class="img-fluid">
+            <hr>
+            {% endfor %}
+          </div>
+          <div class="col-md-3 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="sticky-content">
+              <div class="mb-5">
+                <p>{{project.description}}</p>
+
+              </div>
+
+              <h4 class="h4 mb-3">Tools I used</h4>
+              <ul class="list-unstyled list-line mb-5">
+                {% for tool in project.tool.all %}
+                <li>{{tool}}</li>s
+                {% endfor %}
+              </ul>
+
+              <p><a href="{{project.project_url}}" class="readmore">Download the App</a></p>
+              {% if project.src_url %}
+              <p><a href="{{project.src_url}}" class="readmore">View the source code</a></p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+</main><!-- End #main -->
+{% endblock %}
