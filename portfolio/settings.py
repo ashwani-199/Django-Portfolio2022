@@ -20,7 +20,7 @@ DEBUG = True
 
 # Raises Django's ImproperlyConfigured
 # exception if SECRET_KEY not in os.environ
-SECRET_KEY = 'django-insecure-36-d8&d6&z!!97_nqcecmo1x77uh=r(vp^sfqra_qex#u#f)=w'
+SECRET_KEY = 'django-insecure-9c8&eylwgbevi3(qgfnk*(wh0n#hw&yxq!3sbn1_ss$r9)y^no'
 
 ALLOWED_HOSTS = ['*']
 
@@ -141,3 +141,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 # RECIPIENT_ADDRESS= env('RECIPIENT_ADDRESS')
 EMAIL_USE_TLS = True
+
+
+CSRF_TRUSTED_ORIGINS = ['https://ashwani-199-shiny-space-carnival-6w9x6qq6wvw355wq-8000.preview.app.github.dev/']
